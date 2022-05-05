@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.card{
+    width: 320px;
+}
