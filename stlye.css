@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-text:#4e9960;
+    --color-heading:#c9aca1;
+    --width:100px;
+    --height:100px;
+}
+
+.text{
+    --color-text:#4e9960;
+    font-size: 2rem;
+color: var(--color-text);}
+.box{font-size: 10em;}
+.box p{
+    font-size: 4em;
+    color:var(var(--color-text));
+}
+.box h2{
+    font-size: 1.5em;
+    color:var(--color-heading);
+}
+.shape{
+    width: calc(8* * var(--width));
+    height: calc()
+    background-color: aqua;
+}
+.child{ 
+    width:80%;
+    height:50%;
+    background-color:black;
+}
