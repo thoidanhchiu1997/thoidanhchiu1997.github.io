@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.ctkh {
+    width: 900px;
+    height: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color:red;
+    border: 2px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+}
+.ctkh ul li {
+    text-align: center;
+    
+}
