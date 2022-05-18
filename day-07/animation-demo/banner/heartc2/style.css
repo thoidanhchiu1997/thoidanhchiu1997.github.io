@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 350px;
+    background-color: cadetblue;
+    
+
+}
+.heart{
+    width: 100px;
+    height: 150px;
+    background-color: brown;
+    color: azure;
+    border: none;
+    text-transform: uppercase;
+   
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: rotateY(-45deg);
+    
+}

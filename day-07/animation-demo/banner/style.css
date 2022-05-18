@@ -1,0 +1,53 @@
+.banner{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.banner h2{
+    
+    position: relative;
+    left: -400px;
+    opacity: 0;
+    animation: fade 2s forwards;
+}
+@keyframes fade{
+    0%{
+        left: -400px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+.banner p{
+    position: relative;
+    left: 400px;
+    animation: dade 2s forwards;
+}
+@keyframes dade{
+    0%{
+        left:400px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+.banner button{
+    position: relative;
+    top: 400px;
+    animation: clickme 2s forwards;
+}
+@keyframes clickme{
+    0%{
+        top: 400px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
