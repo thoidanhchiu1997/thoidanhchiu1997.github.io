@@ -45,18 +45,6 @@ console.log(`Ngày ${day} thức dậy lúc 5:00`);
  }
  console.log("Tổng tiền sau 10 ngày tiêt kiệm là:"+money)
 
-
- // Ngày lẻ tiết kiệm 100.000
- // Ngày chẵn tiết kiệm 200.00
- for(let day=1; day<=10,day++){
-     if(day%2==1){
-         money+=100000;
-     }else {
-         money+=200000;
-     }
- }
- console.log("Money=" +money);
-
  //3. Đến ngày số 8 hết tiền không tiết kiệm nữa
  for(let day=1;day<=10; day++){
      if(day==8){
