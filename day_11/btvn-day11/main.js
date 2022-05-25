@@ -3,7 +3,7 @@
 
 
 
-
+// b1
 function text(){
     let a='a'
    for( let i=0;i<=9;i++)
@@ -14,7 +14,7 @@ function text(){
 
 }
 text()
-
+// b2
 function b2(){
    let a="a-"
    for(let i=0;i<=9;i++)
@@ -30,18 +30,8 @@ function b2(){
 }
 b2()
 
-function b3(b){
-   let a="a-"
-   for(let i=0;i<=b;i++)
-   {
-      
-         a=b+'a-'
-      
-      }
-  
-   console.log(a)
-}
-b3()
+
+// b4
 //  số chia hết cho 5 trong khoảng 0-100
 function b4(){
    let b4=0
@@ -66,52 +56,9 @@ function b4a(){
    console.log(b4a)
 }
 b4a()
-
-function thetich(){
-    let r=0
-    for(i=0;i<=r;i++)
-    {
-       thetich=(4/3)*3.14*r*r*r
-    }
-   console.log(r)
-}
-thetich()
-
-function b51(a,b){
-   let b51=0
-  
-   for(let i=a+1;i<=b-1;i++)
- 
-      {
-               b51+=i
-                    
-      }
-     
-      console.log(b51)
-  
-   }
-
-   b51(3,8)
-
-   function b5(a,b){
-      let b5=0
-     
-      for(let i=4;i<=7;i++)
-    
-         {
-            if(a>b){
-               b5+=i
-            }
-                                                            
-         }
-         console.log(b5)
-        
-       
-     
-      }
-   
-      b5(8,3)
-
+                 
+         
+      // b7
       function snt(n)
       {
           
@@ -140,22 +87,76 @@ function b51(a,b){
           }
       }  
       snt(10)
-
-      function sum1(a){
-         let sum1=0
-        
-         for(let i=0;i<=a;i++)
+// b6
+      function tong(a, b) {
+         let soLon = 0;
+         let soBe = 0;
+         if (a >= b) {
+           soLon = a;
+           soBe = b;
+         } else {
+           soLon = b;
+           soBe = a;
+         }
        
-            {
-               
-                  sum1+=i
-               }
-                                                               
-            }
-            console.log(sum1)
+         let soLon1 = soLon - 1;
+         let soBe1 = soBe + 1;
+         let cacSoHang = soLon1 - soBe1 + 1;
+         let tong = ((soBe1 + soLon1) * cacSoHang) / 2;
+       
+         return tong;
+       }
+       console.log(tong(8,3))
+
+// b8
+      
+         function kiemtrasnt(n)
+         {
            
+             var flag = true;
           
-        
-
-         sum1(5)
-
+             
+             if (n < 2) {
+                 flag = false;
+             }
+             else if (n == 2) {
+                 flag = true;
+             }
+             else if (n % 2 == 0) {
+                 flag = false;
+             }
+             else {
+                
+                 for (var i = 3; i <= Math.sqrt(n); i += 2)
+                 {
+                     if (n % i == 0) {
+                         flag = false;
+                         break;
+                     }
+                 }
+             }
+          
+             return flag;
+         }
+       
+         function cacsnt(a)
+{
+  let cacsnt=0         
+    for (let i = 1; i <= a; i++) {
+       
+        if (kiemtrasnt(i)){ cacsnt+=i}
+    }
+    console.log(cacsnt)
+   }    
+   cacsnt(13)    
+   // b9
+  function uocso(a){
+     let uocso=0
+     for(let i=0;i<=a;i++)
+     {
+        if(a%i==0){uocso+=i}
+     }
+     console.log(uocso)
+  }
+   uocso(8)
+               
