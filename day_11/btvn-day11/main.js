@@ -30,7 +30,16 @@ function b2(){
 }
 b2()
 
+// b3
+function b3(s,n){
+    let res=s;
+    for (let i = 2; i <= n;i++){
+        res+='-'+s;
+    }
+    return res;
 
+}
+console.log(b3("a",5))
 // b4
 //  số chia hết cho 5 trong khoảng 0-100
 function b4(){
@@ -53,9 +62,17 @@ function b4a(){
          b4a+=i
       }
    }
-   console.log(b4a)
+  return b4a;
 }
-b4a()
+console.log(b4a)
+
+// b5
+
+function volume(r){
+    let v=(4*matchMedia.PI.r*r*r)/3
+    return r;
+}
+console.log(4)
                  
          
       // b7
@@ -80,13 +97,13 @@ b4a()
        
          
           if (now == true){
-              console.log(n + " là số nguyên tố ");
+              return true;
           }
           else{
-              console.log(n + " không phải là số nguyên tố ");
+              return false;
           }
       }  
-      snt(10)
+     console.log(snt(8))
 // b6
       function tong(a, b) {
          let soLon = 0;
@@ -158,5 +175,16 @@ b4a()
      }
      console.log(uocso)
   }
-   uocso(8)
-               
+   uocso(9)
+
+
+function giaiThua(a){
+    let sum=0
+    for(let i=1;i=a;i++){
+        sum*=i
+    }
+    return sum
+
+}
+console.log(giaiThua(5))
+
