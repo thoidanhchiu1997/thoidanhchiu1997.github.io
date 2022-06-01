@@ -19,24 +19,26 @@ function chuoi1(s3){
 }
 chuoi1(s3)
 // b3
-bt3 
+
 function kiemTraChuoi(str){
     
-    str = str.toLowerCase().replace(/\s/g,'')
+    str = str.toLowerCase().replaceAll(' ','_')    
    
-    return str === str.split('').reverse().join('')
+    return str === str.split('').reverse().join('')  
   }
- console.log(kiemTraChuoi('race    cAr        '))
+ console.log(kiemTraChuoi('anna   '))
  console.log(kiemTraChuoi('tech mater'))
 
 // b5
  function convertSnakecase(key) {
-    let result = key.replace( /([A-Z][a-z])/g, " $1" );
-    return result.split(' ').join('_').toLowerCase();
+    key= key.toLowerCase().replaceAll(" ","_")
+    return key
  }
  
  console.log(convertSnakecase('HELLO world'));
  console.log(convertSnakecase('XIN CHAO CAC BAN'));
+
+//  b4
 
 
 
