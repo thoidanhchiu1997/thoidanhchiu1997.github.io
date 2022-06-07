@@ -52,6 +52,35 @@ let products1 = [
         count: 3,
     }
 ]
+
+
+
+let products2= [
+    {
+        name: "Iphone 13 Pro Max", // Tên sản phẩm
+        price: 30000000, // Giá mỗi sản phẩm
+        brand: "Apple", // Thương hiệu
+        count: 2, // Số lượng sản phẩm trong giỏ hàng
+    },
+    {
+        name: "Samsung Galaxy Z Fold3",
+        price: 41000000,
+        brand: "Samsung",
+        count: 1,
+    },
+    {
+        name: "IPhone 11",
+        price: 15500000,
+        brand: "Apple",
+        count: 1,
+    },
+    {
+        name: "OPPO Find X3 Pro",
+        price: 19500000,
+        brand: "OPPO",
+        count: 3,
+    }
+]
 // 1. In ra thông tin các sản phẩm trong giỏ hàng theo cấu trúc sau
 // Tên - Giá - Thương Hiệu - Số lượng
 // Ví dụ : OPPO Find X3 Pro - 19500000 - OPPO - 3
@@ -105,45 +134,6 @@ const findProductByArray=(arr,used)=>{
 }
 console.log(findProductByArray(products,used))
 // 7. Xóa tất cả sản phẩm của thương hiệu "Samsung" trong giỏ hàng
-function xoaThuongHieufor(products1){
-    var mang=[]
-    for(i=0;i<=products1.length-1;i++){
-    
-        if(products1[i].brand!='Samsung')    
-            {
-              mang.push(products1[i])
-            }
-      
-    }
-    console.log(mang)
-    
-}
-//xoaThuongHieufor(products1)
-//
-function xoaThuongHieushift(products1){
-    var mang=[]
-    for(i=0;i<=products1.length-1;i++){
-    
-        if(products1[i].brand!='Samsung')    
-            {
-                mang.push(products1[i])
-            }
-       
-    }
-    for(i=0;i<=products1.length-1;i++){
-    
-        if(products1[i].brand=='Samsung')    
-            {
-                mang.unshift(products1[i])
-            }
-       
-    }
-    popped = mang.shift();
-    console.log(mang)
-    
-}
-xoaThuongHieushift(products1)
-//
 
 const findProductBynotBrand=(arr,brand)=>{
     return arr.filter(products1 => products1.brand!=brand)
@@ -151,10 +141,32 @@ const findProductBynotBrand=(arr,brand)=>{
 console.log(findProductBynotBrand(products1,'Samsung'))
 
 // 8. Sắp xếp giỏ hàng theo price tăng dần
-
-
+const findProductBynotPrice=products1.sort((a,b) =>a.price-b.price) 
+console.log(findProductBynotPrice)
+   
 // 9. Sắp xếp giỏ hàng theo count giảm dần
+const findProductBynotCount=products1.sort((a,b) =>b.count-a.count) 
+console.log(findProductBynotCount)
+//10. Lấy ra 2 sản phẩm bất kỳ trong giỏ hàng
 
-// 10. Lấy ra 2 sản phẩm bất kỳ trong giỏ hàng
+    function Random2item(products2){
+var findProductByRandom=products2[Math.floor(Math.random() * 3)].name
+var findProductByRandom23=products2[Math.floor(Math.random() * 3)].name
 
+
+
+console.log(findProductByRandom+'-----'+findProductByRandom23)
+    }
+    Random2item(products2)
+
+    function Random2itemObject(products2){
+var findProductByRandom=products2[Math.floor(Math.random() * 3)]
+var findProductByRandom2=products2[Math.floor(Math.random() * 3)]
+const a =[]
+a[0]=findProductByRandom
+a[1]=findProductByRandom2
+
+console.log(a)
+    }
+    Random2itemObject(products2)
 
