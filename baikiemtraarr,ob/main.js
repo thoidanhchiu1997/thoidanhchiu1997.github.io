@@ -82,13 +82,17 @@ function getCountElement(){
 result = { };
 for(let i = 0; i < getCountElement.length; ++i) {
     if(!result[getCountElement[i]])
-        result[getCountElement[i]] = 1;
+        result[getCountElement[i]] = 0;
     ++result[getCountElement[i]];
     return result
 }
 console.log(result)
 }
+console.log(getCountElement)
 
+const findProductBynotPrice=getCountElement.sort((a,b) =>a.price-b.price) 
+console.log(findProductBynotPrice)
+   
 
 
 // Bài 6 (2 điểm). Cho mảng users như sau:
