@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,
+body,
+button,
+input,
+select {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.row{ background-color: rgb(53, 27, 27);
+    width: 1257px;
+    height: 420px;
+    
+    
+}
