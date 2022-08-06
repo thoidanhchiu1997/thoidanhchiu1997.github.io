@@ -1,0 +1,11 @@
+body{
+    box-sizing: border-box;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+}
