@@ -1,0 +1,217 @@
+#pay {
+    margin-top: 50px;
+  }
+  .pay-info h4 {
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 5px;
+  }
+  .pay-info mark {
+      background-color: #fff;
+      color: #f00
+      ;
+      font-size: 14px;
+  }
+  .re {
+      padding-top: 20px;
+      font-style: italic;
+      color: #6b6b6b;
+  }
+  .pay-form label {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .method {
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+  .method h4 {
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 5px;
+  }
+  .method-delivery {
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly;
+      margin-top: 30px;
+      width: 50%;
+      height: 60px;
+      border: 1px solid #000;
+      margin-bottom: 30px;
+  }
+  .method-para p {
+      margin-bottom: 0;
+      font-weight: 500;
+  font-size: 18px;
+  }
+  .form-check-input {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #000;
+  }
+  .form-check-input:checked {
+      background-color: #000;
+      border-color: #000;
+  }
+  
+  .pay-order h4 {
+      border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 5px;
+  }
+  table {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  th {
+      padding-bottom: 10px;
+  }
+  td {
+      padding-bottom: 10px;
+  }
+  .pay-price {
+      text-align: center;
+  }
+  .order-price {
+      text-align: right;
+  }
+  .input-group {
+      border: 1px solid #000;
+      border-right: none;
+  }
+  .input-group-text {
+      color: #fff;
+      background-color: #000;
+      border: 1px solid #000;
+      border-radius: 0;
+  }
+  .free-ship {
+      display: flex;
+      justify-content: space-between;
+  }
+  .pay-order {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #111;
+  }
+  .pay-sum {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .btn-back-cart p{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      color: #0573FF;
+      margin-top: 20px;
+  }
+  .btn-order {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 80px;
+  }
+  .btn-order button {
+      height: 50px;
+      width: 250px;
+      background-color: #000;
+      color: #fff;
+  }
+  /* .hide {
+      display: none;
+  } */
+  .modal-body-discount {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  .discount {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .total {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .code {
+      background-color: #fff;
+      border: none;
+      color: #0573FF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      margin-top: 10px;
+  }
+  .card-discount-content   {
+    margin-bottom: 20px;
+    
+  }
+  .card-row {
+      margin-right: 15px;
+  }
+  .discount-left {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .discount-left h3 {
+      color: #fff;
+  }
+  .discount-right {
+      border: 1px solid #6b6b6b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5px;
+  }
+  .discount-right mark {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .discount-right p {
+      margin-bottom: 0;
+      font-size: 14px;
+  }
+  .discount-right h2 {
+      font-size: 40px;
+      font-weight: 700;
+  }
+  @media(max-width:768px) {
+      .pay-info h4 {
+          font-size: 16px;
+          line-height: 20px;
+      }
+      .method {
+          margin-bottom: 50px;
+      }
+      .method-delivery {
+          width: 80%;
+      }
+      .pay-form label {
+          font-size: 14px;
+      }
+     td {
+         font-size: 14px;
+     }
+  }
+  @media(max-width:992px) {
+      .card-row {
+          margin-right: 0;
+      }
+  }
