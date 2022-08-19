@@ -1,0 +1,70 @@
+#detail-new {
+    margin-top: 60px;
+  
+    
+    padding-bottom: 100px;
+}
+.news-best {
+    position: sticky;
+    top: 30px;
+}
+.background {
+    background-color: #fff;
+}
+.background h2 {
+    font-size: 26px;
+    color: #333;
+}
+.time {
+    display: flex;
+}
+.time span {
+    padding-right: 10px;
+    
+}
+.time svg {
+    margin-bottom: 5px;
+}
+.time p {
+    margin-bottom: 0;
+    color: rgb(84, 80, 80);
+}
+.new-like button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 15px;
+    background-color: #fff;
+}
+.new-like button p {
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+.new-like button svg {
+    margin-bottom: 5px;
+}
+.new-sub {
+    display: flex;
+    justify-content: space-between;
+}
+.new-detail-content {
+    margin-top: 40px;
+}
+.new-detail-content p {
+    padding-top: 15px;
+}
+mark {
+    background-color: #fff;
+    color:#288ad6;
+}
+#you-care {
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.care {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.news-best-title a:hover {
+    text-decoration: underline;
+}

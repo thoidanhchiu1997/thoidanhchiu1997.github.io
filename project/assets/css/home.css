@@ -1,0 +1,449 @@
+.li-home a {
+    color: #f79335;
+  }
+  /* brands */
+  #brands {
+      margin-top: 20px;
+  }
+  /* lookbook */
+  #lookbook {
+      margin-top: 20px;
+     
+  
+      
+    }
+  .lookbook-image-2 {
+      margin-bottom: 24px;
+      
+      
+      
+    }
+    
+    /* best */
+    #best {
+      margin-top: 80px;
+    }
+    .best-content {
+      width: 315px;
+    }
+    .card-item {
+      padding-bottom: 15px;
+      overflow: hidden;
+  }
+    .best-tittle {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      color: #000000;
+      border-bottom: 1px solid #000000;
+    }
+    .best-card {
+      padding-top: 30px;
+    }
+    .add-cart {
+      display: none;
+      cursor: pointer;
+    }
+    .card-item:hover .card-image img {
+      transform: scale(1.1);
+      transition: all 0.5s;
+      overflow: hidden;
+  }
+    .card-item:hover .add-cart {
+      display: block;
+    }
+    .card-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .add {
+      background-color: #000;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .add p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    .card-content {
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 15px;
+    }
+    .card-content .name {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: #000000;
+    }
+    .card-content .price {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #ff0000;
+    }
+    .btn-more button {
+      border: 1px solid #000000;
+      width: 196px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    .btn-more button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    /* tin tức */
+    #news {
+      margin-top: 80px;
+    }
+    .news-content {
+      width: 135px;
+    }
+    .add button {
+      width: 100%;
+    }
+    .btn-add {
+      border: none;
+      background-color: #000;
+    }
+    /* modal add */
+    .modal-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      padding-top: 0;
+    }
+    .modal-body h4 {
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .modal-body p {
+      color: #6b6363;
+    }
+    .modal-footer {
+      padding-top: 0;
+      justify-content: center;
+      border: none;
+    }
+    /* modal-login */
+    .modal-close {
+      display: flex;
+      justify-content: flex-end;
+      padding:  20px 20px 0 20px ;
+    }
+    .modal-title-second {
+      font-size: 26px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+    }
+    .modal-body-second {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .modal-body-second input {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      height: 50px;
+      border: 1px solid #2e2c2c;
+    }
+    
+    .modal-footer-second {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+    .modal-footer-second button {
+      color: #fff;
+      background-color: #000;
+      border-radius: 0;
+      width: 50%;
+      font-family: 'Poppins', sans-serif ;
+    }
+    .modal-footer-second  .btn:hover {
+      color: #fff;
+      background-color: #000;
+    }
+   button:focus {
+     outline: 0 !important;
+     box-shadow: none;
+   }
+   .suggest {
+     color: #1DA1F2;
+     padding-left: 20px;
+     padding-top: 20px;
+     padding-bottom: 40px;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+   }
+   .suggest button {
+     background-color: #fff;
+     border: none;
+     color: #ff0000;
+     font-weight: 600;
+     font-size: 16px;
+   }
+   .suggest .btn-create {
+     color: #1DA1F2;
+   }
+   .accept {
+    padding-left: 20px;
+    padding-bottom  : 30px;
+    padding-right: 20px;
+   }
+   .accept-para {
+     font-family:'Poppins', sans-serif ;
+     font-size: 13px;
+   }
+   mark {
+     background-color: #fff;
+     color: #1DA1F2;
+   }
+  /* .lookbook1 {
+    position: relative;
+    
+  } */
+  
+  #lookbook img {
+   
+    display: block;
+   
+  }
+  .lookbook1 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .lookbook-img {
+    position: relative;
+  }
+  picture img:hover {
+    opacity: .6;
+  }
+  .lookbook-content {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+  .lookbook-content h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .lookbook-content button {
+    padding: 5px 30px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    /* border-radius: 8px; */
+   
+   
+  }
+  .lookbook-content button a {
+    font-weight: 600;
+  }
+  .lookbook-content button a:hover {
+    color: #fff;
+  }
+  .banner-md {
+    margin-top: 50px;
+    display: none;
+  }
+  .banner-sm {
+    margin-top: 40px;
+    display: none;
+  }
+  .card-content-news {
+    padding-top: 0;
+  }
+  /* .carousel-caption {
+    bottom: 30%;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic; */
+    /* transform: translateX(-300px);
+    opacity: 0;
+    visibility: hidden;
+    animation: h2 0.3s ease 1.4s 1 normal forwards; */
+  /* }
+  .carousel-caption p {
+    margin-top: 20px;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .carousel-caption button {
+    background-color: #fff;
+    padding: 5px 20px;
+    margin-top: 20px;
+    
+  }
+  .carousel-caption button a {
+    color: #000;
+    font-weight: 500;
+  } */
+  #news h4 a:hover {
+    text-decoration: underline;
+  }
+  
+  
+    @media (max-width:768px) {
+      .banner-md {
+        display: block;
+      }
+      .banner-lg {
+        display: none;
+      }
+      .lookbook-content {
+        position: static;
+        padding: 0;
+      }
+      .lookbook-content h3 {
+        padding-top: 10px;
+        font-size: 16px;
+        letter-spacing: 0;
+      }
+      .lookbook-content button {
+        padding: 2px 20px;
+        color: #fff;
+        background-color: #000;
+      }
+      .lookbook-content button a {
+        color: #fff;
+        font-size: 14px;
+      }
+     
+    .card-item:hover .card-image img {
+      transform: scale(1);
+  }
+    /* best */
+    #best {
+      margin-top: 60px;
+    }
+    .best-tittle {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    .best-content {
+      width: 221px;
+    }
+    .add {
+      height: 34px;
+    }
+    .add p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .best-card {
+      padding-top: 25px;
+    }
+    .card-content .name {
+      font-size: 13px;
+      line-height: 14px;
+    }
+    .btn-more button {
+      width: 116px;
+      height: 30px;
+      font-size: 12px;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+    #news {
+      margin-top: 60px;
+    }
+    .news-content {
+      width:92px ;
+    }
+    #footer {
+      margin-top: 50px;
+    }
+    }
+    @media (max-width:576px) {
+      .banner-md {
+        display: none;
+      }
+      .banner-sm {
+        display: block;
+      }
+      .lookbook1 {
+        padding-bottom: 20px;
+      }
+      .lookbook-content {
+        position: absolute;
+        padding: 15px;
+      }
+      /* .lookbook1 {
+        padding-right: 0;
+      }     */
+        .lookbook-image-2 {
+            margin-bottom: 6px;
+        }
+        /* .modal-body h4 {
+          font-size: 12px;
+        }
+        .modal-body p {
+          font-size: 9px;
+        } */
+    }
+    @media (min-width:769px) and (max-width:991px) {
+      .lookbook-content {
+        padding: 20px;
+      }
+      .lookbook-content h3 {
+        font-size: 18px;
+      }
+      /* .carousel-caption {
+        bottom: 10%;
+      } */
+    }

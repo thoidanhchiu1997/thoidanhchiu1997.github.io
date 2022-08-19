@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+    
+    display: block;
+    margin: auto;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    text-decoration-color:  #000 ;
+  }
+  a:hover{
+    color: #000;
+  }
+  .thumnail{
+    max-width: 20%;
+  }
+.cart-content h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .cart-content p {
+    text-align: center;
+  }
+  .cart-para {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+  }
+  .products {
+      border-top: 1px solid #ddd;
+      padding-left: 12px;
+      padding-right: 12px;
+      display: block;
+  }
+  .product-item {
+      display: flex;
+      width: 100%;
+      border: 1px solid #000;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+  }
+  .left {
+      display: flex;
+  }
+  .col.left {
+      flex-basis: 70%;
+  }
+  
+  .col.right {
+      flex-basis: 30%;
+      display: flex;
+      align-items: center;
+  }
+  .product-info {
+      padding-left: 30px;
+      padding-top: 20px;
+  }
+  .product-name {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: italic;
+      padding-bottom: 15px;
+  }
+  .product-price {
+      color: #ff0000;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 15px;
+  }
+  .product-size {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+  }
+  .quantity {
+      display: flex;
+  }
+  
+  .quantity,
+  .remove {
+      width: 50%;
+      text-align: center;
+  }
+  
+  .quantity > p, .quantity button {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      background: #fff;
+      border: 2px solid #ddd;
+      font: 600 1.3rem Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .quantity > p {
+      border-right: none;
+      border-left: none;
+  }
+  
+  .quantity button {
+      cursor: pointer;
+      transition: all 0.25s linear;
+  }
+  
+  .quantity button:hover {
+      background-color: #16cc9b;
+      border: 2px solid #16cc9b;
+      color: #ffffff;
+  }
+  .remove {
+      padding-bottom: 15px;
+  }
+  .close {
+      cursor: pointer;
+      font-size: 1.5rem;
+  }
+  
+  .close:hover {
+      color: #f58551;
+  }
+  /* sum */
+  .sum h3 {
+      font-size: 22px;
+      text-align: right;
+      padding-right: 24px;
+      margin-bottom: 60px;
+  }
+  .sum span {
+      color: #ff0000;
+  }
+  /* btn */
+  .cart-btn {
+      display: flex;
+      justify-content: right;
+      padding-right: 24px;
+      margin-bottom: 60px;
+  }
+  .btn-resume button {
+      height: 46px;
+      width: 305px;
+      margin-right: 40px;
+      background-color: #fff;
+      color: #000;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 500;
+  }
+  .btn-pay  button {
+      width: 260px;
+      height: 46px;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #fff;
+      background-color: #000;    
+  }
+  .btn-remove {
+      background-color: #fff;
+      border: none;
+  }
+  .btn-ok {
+      text-transform: uppercase;
+      background-color: #fff;
+      color: #000;
+      border-color: #000;
+      width: 70px;
+  }
+  .btn-ok:focus {
+      outline: 0;
+  }
+  .modal-body {
+      margin-top: 30px;
+  }
+  .btn-cancel {
+      text-transform: uppercase;
+  }
+  .modal-footer {
+      margin-bottom: 20px;
+  }
+  .modal-para {
+      color: #000;
+      font-size: 16px;
+  }
+  
+  @media (max-width:768px) {
+      
+      .cart-content h3 {
+      font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+      .cart-para {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+      }
+      .product-item {
+          border: none;
+          border-bottom: 1px solid #ddd;
+      }
+      .product-info {
+          padding-top: 10px;
+          padding-left: 25px;
+      }
+      .product-name {
+          font-size:14px ;
+          padding-bottom: 5px;
+      }
+      
+      .product-price {
+          font-size: 13px;
+          padding-bottom: 5px;
+      }
+      .product-size {
+          font-size: 14px;
+          text-transform: capitalize;
+      }
+      .quantity,
+  .remove {
+      width: 50%;
+      text-align: right;
+      padding-bottom: 8px;
+  }
+  .quantity > p, .quantity button {
+      height: 32px;
+      width: 49px;
+      margin-top: 10px;
+  }
+  /* sum */
+  .sum h3 {
+      text-align: center;
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 40px;
+  }
+  /* button */
+  .cart-btn {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+  .btn-resume button {
+      margin-right: 0;
+      margin-bottom: 25px;
+      font-size: 18px;
+      width: 250px;
+      height: 42px;
+  }
+  .btn-pay button {
+      height: 42px;
+      width: 250px;
+      font-size: 18px;
+  }
+  }

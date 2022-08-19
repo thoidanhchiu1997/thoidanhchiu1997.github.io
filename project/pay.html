@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Gilda+Display&family=Lato:wght@100;300;400;700;900&family=Montserrat&family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Signika:wght@300;400;500;600;700&family=Yuji+Mai&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="/favicon sneaker.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon sneaker.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/detail.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/category.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pay.css">
+  <link rel="stylesheet" href="assets/css/news.css">
+  <title> NVK SHOP</title>
+   
+  </head>
+  <body>
+    <header id="header">
+    </nav>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+      
+          <a href="/index.html"><h2>NVK</h2></a>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+
+          <ul>
+            <li class="exit">
+              <span><i class="fa-solid fa-x"></i></span>
+            </li>
+            <li class="li-home"><a href="/category.html">Hàng mới</a></li>
+            <li><a href="/contact.html">Áo</a></li>
+            <li><a href="/news.html">Quần</a></li>
+            <li><a href="/about.html">Phụ kiện</a></li>
+            <li><a href="/about.html">Cửa hàng</a></li>
+          </ul>
+        </div>
+        <div class="icon">
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <span class="person"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-person" viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg></span>
+          </button>
+          <span class="bag"><a href="/cart.html">
+              <span id="number-cart"> 2 </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-handbag"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
+              </svg></a></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="myModal" class="myModal-login">
+    <form>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-close">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title-second" id="staticBackdropLabel">
+                Đăng nhập
+              </h5>
+            </div>
+            <div class="modal-body-second">
+              <input type="email" id="email" required value="" placeholder="Email:" />
+              <input type="password" id="pass" required placeholder="Mật khẩu:" />
+            </div>
+            <div class="modal-footer-second">
+              <button type="submit" id="btn-login" class="btn btn-primary-second">
+                Đăng nhập
+              </button>
+            </div>
+            <div class="suggest">
+              <p>
+                Bạn chưa có tài khoản?
+                <button class="btn-log" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop2">
+                  Đăng ký ngay
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="myModal" class="myModal-create">
+    <form action="">
+      <div class="modal fade modal-second" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-close">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title-second" id="staticBackdropLabel">
+                Tạo tài khoản
+              </h5>
+            </div>
+            <div class="modal-body-second">
+              <input type="text" required placeholder="Họ và tên:" />
+              <input type="email" required placeholder="Email:" />
+              <input type="password" required placeholder="Mật khẩu:" />
+              <input type="password" required placeholder="Nhập lại mật khẩu:" />
+            </div>
+            <div class="accept">
+              <label class="accept-para"><input required type="checkbox" /> Nhấn vào nút Đăng ký bên
+                dưới đồng nghĩa với việc bạn đồng ý với các
+                <mark>chính sách bảo mật</mark> và
+                <mark>các điều khoản dịch vụ</mark> của chúng tôi</label>
+            </div>
+            <div class="modal-footer-second">
+              <button type="submit" class="btn btn-primary-second">
+                Đăng ký
+              </button>
+            </div>
+            <div class="suggest">
+              <button class="btn-create" data-bs-dismiss="modal" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Bạn đã có tài khoản?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="myModal" class="myModal-add">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+              </svg></span>
+          </div>
+          <div class="modal-body">
+            <h4>đã thêm vào giỏ hàng !</h4>
+            <p>Sản phẩm đã được thêm vào giỏ hàng của bạn</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Đóng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="free">
+    <p>POLO-CAFE BẢN GIỚI HẠN,MUA NGAY</p>
+  </div>
+    
+    <div id="myModal" class="myModal-discount">
+      <div class="modal fade" id="staticBackdrop-discount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="pay">
+      <div class="container">
+       
+          <div class="row">
+            
+              <div class="col-lg-7 left">
+                <form  name="myForm" id="form" onsubmit="return false" class="needs-validation"  >
+                  <div class="pay-info">
+                    <h4>thông tin giao hàng</h4>
+                    <div class="pay-form">
+                      <div class="form-name">
+                        <label for="validationCustom01" class="form-label"
+                          >Họ và tên <mark>(*)</mark></label
+                        >
+                        <input 
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01" 
+                          required  
+                        />
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                      <div class="form-phone">
+                        <label for="validationCustom02" class="form-label"
+                          >Số điện thoại <mark>(*)</mark></label
+                        >
+                        <input
+                          type="number"
+                          class="form-control phone"
+                          id="validationCustom02"
+                          required
+                        />
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                          <label for="validationCustom04" class="form-label"
+                            >Tỉnh/ Thành phố</label
+                          >
+                          <select
+                            class="form-select province"
+                            id="province"
+                            required
+                          >
+                            <option value="">---Chọn thành phố---</option>
+                            
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                          <label for="validationCustom04" class="form-label"
+                            >Quận/ Huyện</label
+                          >
+                         
+                          <select
+                            class="form-select district"
+                            id="district"
+                            required
+                          >
+                          <option value="">---Chọn quận/huyện---</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                          <label for="validationCustom04" class="form-label"
+                            >Xã/ Phường</label
+                          >
+                          <select
+                            class="form-select commune"
+                            id="commune"
+                            required
+                          >
+                           <option value="">---Chọn xã/phường---</option> 
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="form-address">
+                        <label for="validationCustom01" class="form-label"
+                          >Địa chỉ <mark>(*)</mark></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control address"
+                          id="address"
+                          required
+                        />
+                      </div>
+                      <div class="form-note">
+                        <label for="validationCustom01" class="form-label"
+                          >Ghi chú</label>
+                          <textarea class="form-control" placeholder="Bạn có cần lưu ý gì cho Shop khi giao hàng?" id="floatingTextarea2" style="height: 100px"></textarea>
+                      </div>
+                      <div class="re">
+                        <p> Lưu ý: Các trường có dấu  <mark>(*)</mark> không được để trống</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="method">
+                    <h4>phương thức thanh toán</h4>
+                    <div class="method-delivery">
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+                      </svg></span>
+                      <div class="method-para">
+                        <p>Thanh toán khi nhận hàng</p>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="method1" required>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         
+                        </label>
+                      </div>
+                    </div>
+                    <div class="method-delivery">
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                      </svg></span>
+                      <div class="method-para">
+                        <p>Thanh toán bằng ví điện tử</p>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+            <div class="col-lg-5 right">
+              <div class="pay-order">
+                <h4>Tóm tắt đơn hàng</h4>
+                <table>
+                  <tr>
+                    <th>Sản phẩm</th>
+                  <th>Số lượng</th>
+                  <th class="pay-price">Tạm tính</th>
+                  </tr>
+                  <tr>
+                    <td>ÁO SƠ MI-ART8232NB</td>
+                    <td style="text-align:center;">1</td>
+                    <td class="order-price">1.000.000 VNĐ</td>
+                  </tr>
+                  <td>Air Jordan 1 Retro Hight OG</td>
+                  <td style="text-align:center;">1</td>
+                  <td class="order-price">500.000 VNĐ</td>
+                  <tr>
+  
+                  </tr>
+                </table>
+                <div class="input-group mb-1">
+                  <input type="text" class="form-control promotion" placeholder="Nhập mã giảm giá" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <button class="input-group-text" id="basic-addon2">Áp dụng</button>
+                  
+                </div>
+                
+                <div class="free-ship">
+                  <h6>Phí vận chuyển:</h6>
+                  <h6>0 VNĐ</h6>
+                </div>
+              </div>  
+              <div class="pay-sum">
+                <h6>Tạm tính:</h6>
+                <h6 class="order-sum">1.500.000 VNĐ</h6>
+              </div>
+              <div class="hide">
+                <div class="discount">
+                  <h6>Giảm giá:</h6>
+                  <h6 class="discount-price">0 VNĐ</h6>
+                </div>
+              </div>
+              <div class="total">
+                <h6>Tổng cộng</h6>
+                <h6 class="total-money">1.500.000 VNĐ</h6>
+              </div>
+              <div class="btn-back-cart">
+                <a href="/cart.html"><p>Quay lại giỏ hàng</p></a>
+              </div>
+              <div class="btn-order">
+                <button type="submit" form="form" data-bs-toggle="modal" data-bs-target="#exampleModal" class="order">Đặt hàng</button>
+                
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3 class="footer-tittle">NVK</h3>
+            <div class="footer-content">
+              <p>
+                CÔNG TY CỔ PHẦN THỜI TRANG KOWIL VIỆT NAM
+                Hotline: 1900 8079
+                8:30 - 19:00 tất cả các ngày trong tuần.
+              </p>
+              <p>
+                VP Phía Bắc: Tầng 17 tòa nhà Viwaseen, 48 Phố Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội.
+              </p>
+              <p>
+                VP Phía Nam: 186A Nam Kỳ Khởi Nghĩa, Phường Võ Thị Sáu, Quận 3, TP.HCM
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="footer-tittle">GIỚI THIỆU</p>
+            <div class="footer-content">
+              <p >Giới thiệu NVK</p>
+              <p >Blog</p>
+              <p >Hệ thống cửa hàng</p>
+              <p >Liên hệ NVK</p>
+  
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3 class="footer-tittle">HỖ TRỢ KHÁCH HÀNG</h3>
+            <div class="footer-content">
+              <p>Hỏi đáp</p>
+              <p>Chính sách vận chuyển</p>
+              <p>Hướng dẫn chọn kích cỡ</p>
+              <p>Hướng dẫn thanh toán</p>
+              <p>Quy đổi hàng</p>
+              <p>Hướng dẫn mua hàng</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3 class="footer-tittle">Kết nối </h3>
+            <div class="footer-content">
+              <p>Theo dõi NVK ngay để nhận các ưu đãi sớm nhất !</p>
+              <div class="footer-icon">
+                <span>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-facebook-square"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-youtube-square"></i></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <script  src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/sidebar.js"></script>
+    <script type="module" src="/assets/js/pay.js"></script>
+  </body>
+</html>
