@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Gilda+Display&family=Lato:wght@100;300;400;700;900&family=Montserrat&family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Signika:wght@300;400;500;600;700&family=Yuji+Mai&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAODgixNDc4u1pgZbtYXmO7WF1iu1ddYrtXXWK7WF5ju1leZLpUWl+xNz5EnSgrLYAlJylaBwcILwAAAAsAAAAAMjQz/2Vsbv99hYr/fISI/3uEiP97g4f/eoOH/3qChv95gob/eoKH/1ZgZv+Un6b/ucXP/ZWfqOtfaHC6IScsZDIzT+tWVZL/VVOS/1RTk/9TUZH/UlCP/1JRkv9SUJP/Uk+T/1VTkv9CQ3L/hoq2/7bA2v/G097/xNrs/1trd/EuJofFVEXy/1VG9/9URff/TT/g/0c6zf9SQ+z/Vkf4/1NE8v9GOdT/Niuo/zgsvf4jHWr2MDU69UhSWt4zPEONNy6ci1RF7f9JP77/SESX/0g+wf9YSfj/WUr7/0s94f8sIpX/FxFU4Q0KM6gLCC51BAMSQgkLDD0CAwMgAAAABRIPM2w7MqX7UlRw/05RS/9HTnH/T0Lh/0c62f8gGHX7CgcnqAAAACsAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAEAww1LSZ+6lRXcP9SVVD/SVBx/0I1xv8jGn79CAYhmQAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEEOjgun+1NRL//amnN/0g/v/8tI5//CwguuwAAABYBAQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDCTwcGFCwKSJ1uicgdegrIoz/FxFa2gAAADsCAQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABQAAAAUEAhFVBQMWjQAAASkAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAAAHwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAHwAAAH8AAAD/AAAB/wAAAf8AAOf/AAD//wAA//8AAA==" type="image/x-icon">
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAODgixNDc4u1pgZbtYXmO7WF1iu1ddYrtXXWK7WF5ju1leZLpUWl+xNz5EnSgrLYAlJylaBwcILwAAAAsAAAAAMjQz/2Vsbv99hYr/fISI/3uEiP97g4f/eoOH/3qChv95gob/eoKH/1ZgZv+Un6b/ucXP/ZWfqOtfaHC6IScsZDIzT+tWVZL/VVOS/1RTk/9TUZH/UlCP/1JRkv9SUJP/Uk+T/1VTkv9CQ3L/hoq2/7bA2v/G097/xNrs/1trd/EuJofFVEXy/1VG9/9URff/TT/g/0c6zf9SQ+z/Vkf4/1NE8v9GOdT/Niuo/zgsvf4jHWr2MDU69UhSWt4zPEONNy6ci1RF7f9JP77/SESX/0g+wf9YSfj/WUr7/0s94f8sIpX/FxFU4Q0KM6gLCC51BAMSQgkLDD0CAwMgAAAABRIPM2w7MqX7UlRw/05RS/9HTnH/T0Lh/0c62f8gGHX7CgcnqAAAACsAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAEAww1LSZ+6lRXcP9SVVD/SVBx/0I1xv8jGn79CAYhmQAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEEOjgun+1NRL//amnN/0g/v/8tI5//CwguuwAAABYBAQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDCTwcGFCwKSJ1uicgdegrIoz/FxFa2gAAADsCAQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABQAAAAUEAhFVBQMWjQAAASkAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAAAHwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAHwAAAH8AAAD/AAAB/wAAAf8AAOf/AAD//wAA//8AAA==" type="image/x- icon">
+
+  <link rel="shortcut icon" href="/favicon sneaker.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon sneaker.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/detail.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/category.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/pay.css">
+  <link rel="stylesheet" href="assets/css/news.css">
+  <title> Giới thiệu</title>
+</head>
+
+<body>
+  <header id="header">
+    
+    
+  </nav>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+      
+          <a href="./index.html"><h2>NVK</h2></a>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+
+          <ul>
+            <li class="exit">
+              <span><i class="fa-solid fa-x"></i></span>
+            </li>
+            <li class="li-home"><a href="./category.html">Hàng mới</a></li>
+            <li><a href="./contact.html">Áo</a></li>
+            <li><a href="/clothes.html">Quần</a></li>
+            <li><a href="./accessory.html">Phụ kiện</a></li>
+            <li><a href="./about.html">Cửa hàng</a></li>
+          </ul>
+        </div>
+        <div class="icon">
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <span class="person"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-person" viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg></span>
+          </button>
+          <span class="bag"><a href="/cart.html">
+              <span id="number-cart"> 2 </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-handbag"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
+              </svg></a></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="myModal" class="myModal-login">
+    <form>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-close">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title-second" id="staticBackdropLabel">
+                Đăng nhập
+              </h5>
+            </div>
+            <div class="modal-body-second">
+              <input type="email" id="email" required value="" placeholder="Email:" />
+              <input type="password" id="pass" required placeholder="Mật khẩu:" />
+            </div>
+            <div class="modal-footer-second">
+              <button type="submit" id="btn-login" class="btn btn-primary-second">
+                Đăng nhập
+              </button>
+            </div>
+            <div class="suggest">
+              <p>
+                Bạn chưa có tài khoản?
+                <button class="btn-log" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop2">
+                  Đăng ký ngay
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="myModal" class="myModal-create">
+    <form action="">
+      <div class="modal fade modal-second" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-close">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title-second" id="staticBackdropLabel">
+                Tạo tài khoản
+              </h5>
+            </div>
+            <div class="modal-body-second">
+              <input type="text" required placeholder="Họ và tên:" />
+              <input type="email" required placeholder="Email:" />
+              <input type="password" required placeholder="Mật khẩu:" />
+              <input type="password" required placeholder="Nhập lại mật khẩu:" />
+            </div>
+            <div class="accept">
+              <label class="accept-para"><input required type="checkbox" /> Nhấn vào nút Đăng ký bên
+                dưới đồng nghĩa với việc bạn đồng ý với các
+                <mark>chính sách bảo mật</mark> và
+                <mark>các điều khoản dịch vụ</mark> của chúng tôi</label>
+            </div>
+            <div class="modal-footer-second">
+              <button type="submit" class="btn btn-primary-second">
+                Đăng ký
+              </button>
+            </div>
+            <div class="suggest">
+              <button class="btn-create" data-bs-dismiss="modal" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Bạn đã có tài khoản?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="myModal" class="myModal-add">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+              </svg></span>
+          </div>
+          <div class="modal-body">
+            <h4>đã thêm vào giỏ hàng !</h4>
+            <p>Sản phẩm đã được thêm vào giỏ hàng của bạn</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Đóng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="free">
+    <p>POLO-CAFE BẢN GIỚI HẠN,MUA NGAY</p>
+  </div>
+  
+  <section id="about">
+    <div class="container">
+    
+    </div>
+  </section>
+  <section id="end">
+      <div class="container">
+          <h5>GIỚI THIỆU VỀ THƯƠNG HIỆU THỜI TRANG NAM NVK</h5>
+          <h5>HƠN 10 NĂM TÔN VINH BẢN LĨNH ĐÀN ÔNG VIỆT, NVK - HƠN CẢ MỘT THƯƠNG HIỆU THỜI TRANG</h5>
+          <p class="author">Sau hơn 1 thập kỉ theo đuổi sứ mệnh: Mang tới trải nghiệm mặc toàn diện, về cả chất lượng sản phẩm lẫn tính thời trang đổi mới, Owen để lại những dấu ấn đặc biệt trong tâm trí khách hàng, dần trở nên quen thuộc với đại đa số phái mạnh và luôn nằm trong tốp đầu những thương hiệu thời trang nam tại Việt Nam.</p>
+          <p class="author">I, Hành trình 10 năm đồng hành cùng thời trang nam Việt Nam</p>
+          <p>Được thành lập năm 2008, NVK là một trong những thương hiệu tiên phong về chất liệu. Giữa vô vàn các hãng thời trang không rõ nguồn gốc xuất xứ, chất lượng không có sự đảm bảo, Owen khẳng định mình là thương hiệu Việt uy tín chất lượng cao, kiến tạo chuẩn mực mới cho thời trang dành cho nam giới.
+          </p>
+          <p>Năm 2014, NVK tiếp tục đầu tư mạnh về chất liệu thông qua sự hợp tác với Itochu - Công ty dệt may Nhật Bản chuyên cung cấp, quản lý chất liệu vải theo tiêu chuẩn khắt khe bậc nhất Nhật Bản, đi đầu về công nghệ sản xuất chất liệu mới (như vải sợi tre, sợi Nano, sợi cafe,...) Hơn cả là đối tác về cung cấp, Itochu còn là đối tác về chiến lược của thương hiệu, Itochu Group đã cố vấn toàn diện về hoạt động mở rộng thị trường, quản trị chất lượng sản phẩm và tối ưu nhân lực lãnh đạo,... Việc hợp tác toàn diện giữa thương hiệu Owen và Itochu đã không chỉ tăng sự hiện diện của thương hiệu trên thị trường bán lẻ, mà còn nới rộng và góp phần nâng tầm Owen trở thành thương hiệu thời trang nam hàng đầu Việt Nam.</p>
+          <p>Năm 2018, sau 10 năm không ngừng phát triển và cải tiến, Owen đánh dấu sự thành công vang dội với hơn 1000 đại lý, showroom và 100 cửa hàng bán lẻ tại các tỉnh và thành phố lớn, trở thành hãng thời trang nam có độ phủ lớn nhất cả nước. Một trong những yếu tố lớn nhất làm nên thành công của Owen chính là sự kỹ càng trong việc tuyển chọn chất liệu lẫn nghiên cứu xu hướng thời trang quốc tế, thông qua đó, Owen đã cho ra mắt nhiều bộ sưu tập đột phá, đón nhận sự hưởng ứng nồng nhiệt và là lựa chọn tin cậy của đông đảo nam giới. Năm 2018 cũng chứng kiến Owen mở rộng thương hiệu theo chiều sâu, hướng tới những đối tượng khách hàng trẻ hơn với những chiến lược tái định vị về cả thông điệp, hình ảnh thương hiệu lẫn chiến lược truyền thông.
+
+        </p>
+        <img src="https://owen.vn/pub/media/Owen-2020/g7gbxVU.jpg" alt="">
+        <p>Năm 2020, sau 2 năm chuyển mình, Owen đã bước đầu đón nhận thành quả khi 90% nam giới 20-45 đều nhận diện được thương hiệu thời trang Owen, Đồng thời, các sản phẩm được ra mắt với mẫu mã đa dạng hơn, phong phú về thiết kế và kiểu dáng, thể hiện thông qua những bộ sưu tập bắt mắt, phù hợp với những xu thế thời trang hiện đại.
+
+            Tiếp nối sự thành công của hãng trong thị trường nội địa, Owen có tầm nhìn tới năm 2025 sẽ lấn sân sang thị trường quốc tế, bắt đầu với những nước ở khu vực Đông Nam Á.</p>
+        <p class="author">II, Định vị thương hiệu của Owen - Điều tạo nên giá trị khác biệt cho thương hiệu</p>    
+        <p>Owen không chỉ dừng lại ở chất liệu thời trang và phong cách như những thương hiệu khác đang làm. Owen mang tới giải pháp thời trang, đem lại sự tự tin cho nam giới. 
+
+            Lấy ý tưởng kết hợp bản sắc thời trang và tinh thần bản lĩnh của thế hệ người Việt trẻ, Owen là người bạn đồng hành trong những chặng đường chinh phục thử thách của đàn ông Việt. 
+            
+            Qua đó, NVK đề xuất giá trị và định vị của mình như sau: 
+            
+            “LỊCH LÃM THỜI TRANG, VỮNG VÀNG BẢN LĨNH - ELEGANT WEAR, STRONG COURAGE”
+            
+            Người đàn ông OWEN mang trong mình sự kết nối, được đánh dấu bởi những thành tựu trong cuộc sống, qua đó truyền cảm hứng và lan tỏa tinh thần bản lĩnh, chinh phục đến những người đàn ông khác.</p>
+         <img src="https://owen.vn/pub/media/Owen-2020/YlVSZbW.jpg" alt=""> 
+         <p class="author">III, Triết lý cốt lõi NVK đã và đang gây dựng</p>  
+         <p class="author">1, Đem đến tính ứng dụng cao cho người mặc.</p>
+         <p>Cơn lốc hàng ngoại nhập và sự tham gia phân khúc thời trang nam của nhiều nhãn hiệu khác khiến thị trường trở nên cạnh tranh khốc liệt. Nếu tiếp tục trung thành với phong cách thanh lịch đơn điệu, Owen e rằng sẽ hụt hơi trong cuộc đua này. Năm 2018, thương hiệu quyết định tái định vị thương hiệu và đề xuất triết lý thời trang mới. Kể từ giai đoạn này, Owen tập trung vào giải pháp ứng dụng của sản phẩm. Vẫn là một nhãn hiệu thời trang lịch lãm dành cho phái mạnh nhưng bắt kịp xu hướng, gai góc và cá tính hơn. Owen trở nên trendy hơn với áo polo, blazer, jacket, quần Jeans,.. Đồng thời tích cực kết hợp cùng Nhà Thiết Kế trẻ đầy tiềm năng Hoàng Minh Hà cho ra các bộ sưu tập như: “CHAOS” hay “My Way” đầy tinh thần táo bạo và phá cách.</p>
+         <p class="author">2, Biến nam giới thành những quý ông thực thụ .</p>
+         <p>Thông thường, mọi người luôn nghĩ chỉ có phụ nữ nên mới đầu tư vào thời trang. Đàn ông là người xuề xòa, bề ngoài không cần chăm chút kỹ lưỡng. Owen đã chứng minh điều ngược lại. Nam giới cũng có thế giới thời trang riêng của họ. Phong cách thời trang góp phần toát lên được bản lĩnh đích thực của phái mạnh.
+
+            Owen tin rằng đàn ông thành đạt, tự tin trong cuộc sống luôn có phong cách ăn mặc rõ nét: lịch lãm, đĩnh đạc và đậm hơi thở hiện đại. Do đó, Owen hoạt động với tôn chỉ “Giúp nam giới thành quý ông” nhằm nâng tầm hình ảnh đàn ông Việt, không chỉ bên ngoài mà còn cả bên trong.</p>
+        <p class="author">3, Khích lệ nam giới trở thành phiên bản tốt hơn của chính mình</p> 
+        <p>Ở phía ngoài kia chắc hẳn có nhiều những bạn trẻ đang mang trong mình những hoài bão và khát khao trở thành phiên bản mà mình mong muốn. Nhưng có lẽ, không phải ai cũng có đủ bản lĩnh bước ra khỏi vùng an toàn của bản thân để thực hiện điều đó. Owen muốn khích lệ tinh thần người Việt trẻ qua thông điệp “dám”, hãy dám là mình, dám làm điều mình muốn, dám bước ra khỏi vùng an toàn để trở nên tốt hơn. 
+
+            Trên hành trình của mỗi người sẽ luôn xuất hiện những giới hạn và rào cản nhất định. Khi những giới hạn cũ bị xoá đi thì những giới hạn mới lại hình thành, để rồi ta tự nhận ra rằng: không có "tốt nhất", chỉ có "tốt hơn". Vì vậy, dám trở nên tốt hơn mỗi ngày là chiến thắng nhỏ bé mà vinh quang Owen muốn truyền tải đến đàn ông Việt.
+            
+            Mỗi người đàn ông đều mang trong mình những bản sắc riêng, việc của Owen là tôn vinh nó một cách lịch lãm và tinh tế nhất. Owen hy vọng, trên mỗi bước đi thành công của đàn ông Việt sẽ đều có dấu ấn của Owen - như một người đồng hành, như một người bạn, như một người truyền năng lượng bản lĩnh giúp đàn ông Việt dám trở thành phiên bản tốt hơn của bản thân.
+            
+            Owen vẫn không ngừng đổi mới để trở nên tốt hơn mỗi ngày, vậy còn bạn?
+            
+             
+            
+            ---------</p>   
+
+      </div>
+   </Section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="modulepreload" src="/assets/js/main.js"></script>
+  <script type="modulepreload" src="/assets/js/home.js"></script>
+  <script type="modulepreload" src="/assets/js/sidebar.js"></script>
+  <script type="module" src="/assets/js/login.js"></script>
+  <!-- <script type="module" src="/js/cart.js"></script> -->
+  <script type="module" src="/js/localstorage.js"></script>
+</body>
+
+</html>

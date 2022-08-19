@@ -18,19 +18,15 @@
 <link rel="icon" href="/favicon sneaker.ico" type="image/x-icon">
 <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/footer.css">
-  <link rel="stylesheet" href="assets/css/detail.css">
-  <link rel="stylesheet" href="assets/css/index.css">
+ 
   
-  <link rel="stylesheet" href="assets/css/category.css">
-  <link rel="stylesheet" href="assets/css/about.css">
+  
   <link rel="stylesheet" href="assets/css/cart.css">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/pay.css">
-  <link rel="stylesheet" href="assets/css/news.css">
+  
   
   
  
-  <title>Hàng mới</title>
+  <title>Giỏ hàng</title>
 </head>
 <body>
   <header id="header">
@@ -186,6 +182,96 @@
   <div class="free">
     <p>POLO-CAFE BẢN GIỚI HẠN,MUA NGAY</p>
   </div>
+  
+  
+  
+<div id="myModal" class="myModal-login">
+  <form>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-close">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-header">
+            <h5 class="modal-title-second" id="staticBackdropLabel">Đăng nhập</h5>
+            
+          </div>
+          <div class="modal-body-second">
+            <input  type="email" id="email" required placeholder="Email:">
+            <input  type="password" id="pass" required placeholder="Mật khẩu:">              
+          </div>
+          <div class="modal-footer-second">
+            
+            <button type="submit" id="btn-login" class="btn btn-primary-second">Đăng nhập</button>
+          </div>
+          <div class="suggest">
+            <p>Bạn chưa có tài khoản? <button class="btn-log" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Đăng ký ngay</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="myModal" class="myModal-create">
+  <form action="">
+    <div class="modal fade modal-second" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-close">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-header">
+            <h5 class="modal-title-second" id="staticBackdropLabel">Tạo tài khoản</h5>
+            
+          </div>
+          <div class="modal-body-second">
+            <input type="text" required placeholder="Họ và tên:">
+            <input type="email" required placeholder="Email:">
+            <input type="password" required placeholder="Mật khẩu:">
+            <input type="password" required placeholder="Nhập lại mật khẩu:">
+            
+          </div>
+          <div class="accept">
+            <label class="accept-para"><input required type="checkbox">  Nhấn vào nút Đăng ký bên dưới đồng nghĩa với việc bạn đồng ý với các <mark>chính sách bảo mật</mark> và <mark>các điều khoản dịch vụ</mark> của chúng tôi</label>
+          </div>
+          <div class="modal-footer-second">
+            
+            <button type="submit"  class="btn btn-primary-second">Đăng ký</button>
+          </div>
+          <div class="suggest">
+             <button class="btn-create" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Bạn đã có tài khoản?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="myModal" class="myModal-add">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+          </svg></span>
+        </div>
+        <div class="modal-body">
+          <h4>đã thêm vào giỏ hàng !</h4>
+          <p>Sản phẩm đã được thêm vào giỏ hàng của bạn</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<body>
   <div class="container">
     <div class="btn-back">
       <div class="btn-back-icon">
@@ -195,7 +281,10 @@
     </div>
   </div>
   <div class="container">
-      
+      <div class="cart-content">
+        <h3>Giỏ hàng của bạn</h3>
+      <p class="cart-para">Có tổng cộng 2 sản phẩm trong giỏ hàng</p>
+      </div>
   </div>
   <section id="cart">
     <div class="container">
@@ -204,7 +293,7 @@
                 <div class="col left">
                     <div class="thumnail">
                         <a href="#">
-                            <img src="https://owen.vn/media/catalog/product/cache/d52d7e242fac6dae82288d9a793c0676/q/s/qs23471_1_.jpg" alt="Nike Air 90">
+                            <img 1src="https://media3.scdn.vn/img3/2019/9_3/dcuqCY_simg_de2fe0_250x250_maxb.jpg" alt="ÁO SƠ MI">
                         </a>
                     </div>
                     <div class="product-info">
@@ -215,7 +304,7 @@
                             1.000.000 VNĐ
                         </div>
                         <div class="product-size">
-                            size: L
+                            size: XL
                         </div>
                         
                     </div>
@@ -238,15 +327,15 @@
               <div class="col left">
                   <div class="thumnail">
                       <a href="#">
-                          <img src="https://owen.vn/media/amasty/webp/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/s/as220797d_png.webp" alt="Air Jordan 1 Retro Hight OG">
+                          <img src="https://media3.scdn.vn/img3/2019/4_17/Pu0Ltc_simg_de2fe0_250x250_maxb.jpg" alt="ÁO SƠ MI">
                       </a>
                   </div>
                   <div class="product-info">
                       <div class="product-name">
-                          <a href="#">ÁO SƠ MI-ART232323NT</a>
+                          <a href="#">ÁO SƠ MI-ART4343NT</a>
                       </div>
                       <div class="product-price">
-                          500.000 VNĐ
+                          800.000 VNĐ
                       </div>
                       <div class="product-size">
                           size: L
@@ -278,7 +367,7 @@
   <section id="summary">
     <div class="container">
       <div class="sum">
-        <h3>Tổng cộng: <span>1.500.000</span></h3>
+        <h3>Tổng cộng: <span>9.100.000</span></h3>
       </div>
     </div>
   </section>
@@ -292,7 +381,6 @@
       </div>
     </div>
   </div>
-  
  
   <footer id="footer">
     <div class="container">
@@ -353,9 +441,11 @@
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="module" src="/assets/js/main.js"></script>
-  <script type="module" src="/assets/js/sidebar.js"></script>
-  <script type="module" src="/assets/js/cart.js"></script>
+  
+  <script  src="./assets/js/main.js"></script>
+  <script src="./assets/js/sidebar.js"></script>
+  <script  src="./assets/js/cart.js"></script>
+  
   
   
 </body>

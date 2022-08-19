@@ -1,8 +1,4 @@
-import "../css/header.css"
-import "../css/category.css"
-import "../css/home.css"
-import "../css/footer.css"
-import "../css/index.css"
+
 
 
 var myModal = document.getElementById('myModal')
@@ -15,99 +11,99 @@ myModal.addEventListener('shown.bs.modal', function () {
 
 var products = [
     {   id: 1,
-        name:"Nike Air Max Terrascape 90",
-        img: "https://api.vercel.com/now/files/cc48a63d2c89794b951e922f927d9232c2ceb552/Rectangle.png",
-        brand: "Nike",
-        price: "3000000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-ART2212NT",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/r/ar220134dt_1_.jpg",
+        brand: "ÁO SƠ MI",
+        price: "600000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 2,
-        name:"Air Jordan 1 Mid SE",
-        img: "https://api.vercel.com/now/files/72aa535cba9cbf8d317c1be7e72b7973aa1427d6/sp%202.png",
-        brand: "Jordan",
-        price: "3800000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-ART4343NT",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/s/as220796d.png",
+        brand: "ÁO SƠ MI",
+        price: "800000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 3,
-        name:"Converse Lift Platform",
-        img: "https://api.vercel.com/now/files/a6dff28d7324c974f41afb84e7f67770497abb61/conversexanh.png",
-        brand: "Converse",
-        price: "999999",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-ART8232NB",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/q/s/qs23471.jpg",
+        brand: "ÁO SƠ MI",
+        price: "1000000",
+        size: "S,M,L,XL,XXL"
     },
     {
         id: 4,
-        name:"New Balance 993 Grey",
-        img: "https://api.vercel.com/now/files/1695a25f826362cd83c227005246009c73f53cb1/newbalance.png",
-        brand: "NewBalance",
-        price: "4100000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO POLO-PL2312NT",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/p/apv221135.png",
+        brand: "ÁO POLO",
+        price: "400000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 5,
-        name:"Air Jordan 1 Retro Hight OG",
-        img: "https://api.vercel.com/now/files/19b42f2f2ff8dc72c64131aad0fa5c6bd0f22a08/sp%205.png",
-        brand: "Jordan",
+        name:"ÁO POLO-PL4323SN",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/_/3/_3m_apv221132.jpg",
+        brand: "ÁO POLO",
         price: "5000000",
-        size: "38,39,40,41,42,43"
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 6,
-        name:"Converse Custom Chuck Taylor",
-        img: "https://api.vercel.com/now/files/657e42783e8246be5c32e6e1e7a673953ec2b112/converse.png",
-        brand: "Converse",
-        price: "3500000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO POLO-PL202208NB",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/_/3/_3m_apv221131_2_.jpg",
+        brand: "ÁO POLO",
+        price: "500000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 7,
-        name:"Adidas Originals Forum 84",
-        img: "https://api.vercel.com/now/files/2430a5c897a07810f1b780573c7d253716a510b2/adidas.png",
-        brand: "Adidas",
-        price: "1500000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-SM232324NB",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/s/as220131nt_2__3.jpg",
+        brand: "ÁO SƠ MI",
+        price: "500000",
+        size: "S,M,L,XL,XXL"
     },
     {
         id: 8,
-        name:"Nike Air Force 1 Crater Flyknit",
-        img: "https://api.vercel.com/now/files/7697d3fac65b9dd2ffcabca396cd3396675eb745/sp%208.png",
-        brand: "Nike",
-        price: "2500000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-SM232123SB",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/z/3/z3594981116045_04577f6762d11138f87f574828aee9b0_1.jpg",
+        brand: "ÁO SƠ MI",
+        price: "800000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 9,
-        name:"Gucci Rhyton Mouth",
-        img: "https://api.vercel.com/now/files/4035e80344bd320962d632839e1202757e21590d/gucci1.png",
-        brand: "Gucci",
-        price: "5500000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO SƠ MI-ART23232332SN",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/z/3/z3594981116045_04577f6762d11138f87f574828aee9b0_1.jpg",
+        brand: "ÁO SƠ MI",
+        price: "1000000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 10,
-        name:"Jordan Delta 2 SE",
-        img: "https://api.vercel.com/now/files/f751100a609981758c82e59a9ab3037a4f94f1ea/sp%204.png",
-        brand: "Jordan",
+        name:"Á SƠ MI-BN23232SM",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/r/ar220012nt.jpg",
+        brand: "ÁO SƠ MI",
         price: "900000",
-        size: "38,39,40,41,42,43"
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 11,
-        name:"New Balance 57/40",
-        img: "https://api.vercel.com/now/files/671fa23f0084fd89bd987ed026322ee800e464ad/nb1.png",
-        brand: "NewBalance",
-        price: "2900000",
-        size: "38,39,40,41,42,43"
+        name:"ÁO POLO-PL093278NM",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/p/apv220307_1_.jpg",
+        brand: "ÁO POLO",
+        price: "1300000",
+        size: "S,M,L,XL,XXL"
     },
     {   
         id: 12,
-        name:"Converse Chuck Taylor Seasonal ",
-        img: "https://api.vercel.com/now/files/dc5f19f29b10973897d22ad8f1ecadb9e3deac90/conversered.png",
-        brand: "Converse",
+        name:"ÁO SƠ MI-SM981232SN ",
+        img: "https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/b/a/ba220022nt.jpg",
+        brand: "ÁO SƠ MI",
         price: "1200000",
-        size: "38,39,40,41,42,43"
+        size: "S,M,L,XL,XXL"
     },
 
 ]

@@ -1,4 +1,4 @@
-import "jquery/dist/jquery.js"
+
 $(".menu-icon").click(function() {
     $(".menu ul").css("left","0")
     $("#overlay").css("display","block")

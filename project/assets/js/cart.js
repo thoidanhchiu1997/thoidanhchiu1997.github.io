@@ -1,25 +1,23 @@
-import "../css/index.css"
-import "../css/header.css"
-import "../css/footer.css"
-import "../css/category.css"
-import "../css/cart.css"
-import "../css/home.css"
+
+
+
+
 
 let products = [
     {
         id: 1,
-        img:"https://final-project-chi-dun.vercel.app/assets/cart%201.ceb6b988.png",
-        price: 4100000,
-        size:40,
-        name:"Nike Air Max Terrascape 90",
+        img:"https://media3.scdn.vn/img3/2019/9_3/dcuqCY_simg_de2fe0_250x250_maxb.jpg",
+        price: 1000000,
+        
+        name:"ÁO SƠ MI",
         count: 1,
     },
     {
         id: 2,
-        img:"https://final-project-chi-dun.vercel.app/assets/cart%202.998c5eef.png",
-        price:5000000,
-        size:40,
-        name:"Air Jordan 1 Retro Hight OG",
+        img:"https://media3.scdn.vn/img3/2019/4_17/Pu0Ltc_simg_de2fe0_250x250_maxb.jpg",
+        price:800000,
+       
+        name:"ÁO SƠ MI",
         count: 1,
     },
    
