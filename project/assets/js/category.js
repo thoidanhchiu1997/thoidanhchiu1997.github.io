@@ -160,7 +160,7 @@ function renderProduct(arrBrand = [] , arrPrice = []) {
         <div class="col-lg-4 col-6">
             <div class="card-item">
               <div class="card-image">
-                <a href="/detail.html"><img
+                <a href="./detail.html"><img
                   src="${p.img}"
                   alt="${p.name}"
                 /></a>
@@ -171,7 +171,7 @@ function renderProduct(arrBrand = [] , arrPrice = []) {
                 </div>
               </div>
               <div class="card-content">
-                <h4 class="name"><a href="/detail.html">${p.name}</a></h4>
+                <h4 class="name"><a href="./detail.html">${p.name}</a></h4>
                 <h4 class="price">${formatCash(p.price)} VNĐ</h4>
               </div>
             </div>

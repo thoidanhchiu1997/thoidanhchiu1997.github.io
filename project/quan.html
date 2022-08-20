@@ -21,19 +21,17 @@
   <link rel="icon" href="/favicon sneaker.ico" type="image/x-icon" />
 <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/detail.css">
   
+  <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/css/category.css">
   <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/cart.css">
+ 
   <link rel="stylesheet" href="./assets/css/home.css">
-  <link rel="stylesheet" href="./assets/css/pay.css">
-  <link rel="stylesheet" href="./assets/css/news.css">
  
   
   
  
-  <title>Chi tiết sản phẩm</title>
+  <title>Quần</title>
 </head>
 <body>
   <header id="header">
@@ -44,7 +42,7 @@
       <div class="header-content">
         <div class="logo">
       
-          <h2>NVK</h2>
+          <a href="index.html"><h2>NVK</h2></a>
         </div>
         <div class="menu">
           <div class="menu-icon">
@@ -57,7 +55,7 @@
             </li>
             <li><a href="./category.html">Hàng mới</a></li>
             <li><a href="./ao.html">Áo</a></li>
-            <li><a href="./quan.html">Quần</a></li>
+            <li class="li-home"><a href="./quan.html">Quần</a></li>
             <li><a href="./phu-kien.html">Phụ kiện</a></li>
             <li><a href="./about.html">Cửa hàng</a></li>
           </ul>
@@ -191,7 +189,49 @@
   </div>
   
   
-  
+  <div id="overlay"></div>
+<div style="width: 100%; padding-top: 15px;">
+    <div id="overlay"></div>
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel"style="max-width: 1300px; margin: auto;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div></div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carou">
+        <img src="/assets/img/hàng mới/banner hang moi ve.jpg" class="d-block w-100" alt="giày trắng" />
+        
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/hàng mới/banner hang moi ve.jpg" class="d-block w-100" alt="giày vàng" />
+         
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div class="container">
+  <div class="btn-back">
+    <div class="btn-back-icon">
+     <a href="./index.html"> <span><i class="fa-solid fa-angles-left"></i></span></a>
+    </div>
+    <a href="./index.html"><p>Trở về trang chủ</p></a>
+  </div>
+</div>
 <div id="myModal" class="myModal-login">
   <form>
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -277,197 +317,377 @@
     </div>
   </div>
 </div>
-
-
-<section id="detail">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-12">
-              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="/image/desktop/Rectangle.png" alt=""></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
-                      <img src="https://owen.vn/media/catalog/product/cache/d2d00acd24420b2884efc2be677df778/q/s/qs23471.jpg" alt="">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"><img src="/image/desktop/thumb3.png" alt=""></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"><img src="/image/desktop/thumb4.png" alt=""></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"><img src="/image/desktop/thumb55.png" alt=""></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <img src="https://owen.vn/media/catalog/product/cache/d2d00acd24420b2884efc2be677df778/q/s/qs23471.jpg" class="d-block w-80" alt="...">
-                      
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img src="https://owen.vn/media/catalog/product/cache/d52d7e242fac6dae82288d9a793c0676/q/s/qs23471_3_.jpg" class="d-block w-80" alt="...">
-                      
-                    </div>
-                    <div class="carousel-item">
-                      <img src="https://owen.vn/media/catalog/product/cache/d52d7e242fac6dae82288d9a793c0676/q/s/qs23471_3_.jpg" class="d-block w-80" alt="...">
-                      
-                    </div>
-                    <div class="carousel-item">
-                      <img src="https://owen.vn/media/catalog/product/cache/d52d7e242fac6dae82288d9a793c0676/q/s/qs23471_2_.jpg" class="d-block w-80" alt="...">
-                      
-                    </div>
-                    <div class="carousel-item">
-                      <img src="https://owen.vn/media/catalog/product/cache/d2d00acd24420b2884efc2be677df778/q/s/qs23471.jpg" class="d-block w-80" alt="...">
-                      
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+<div id="myModal" class="myModal-filter">
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-body-filter">
+          <div class="filter-brand">
+            <h3 class="filter-name">Thương hiệu</h3>
+            <div class="filter-brand-check">
+              <div class="row">
+                
+                <div class="col-6 pb-1">
+                  <label><input  type="checkbox" class="brand" value="Nike"> Áo polo</label>
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input  type="checkbox" class="brand" value="Adidas"> Áo sơ mi</label>
                 </div>
                 
-                 
+                
+              </div>
             </div>
-            <div class="col-lg-5 ps-lg-5 col-md-12">
-                <div class="parent-description">
-                  <div class="description">
-                    <h3 class="detail-name">ÁO SƠ MI-ART8232NB
-                    </h3>
-                    <h4 class="detail-price">1.000.000 VNĐ</h4>
-                    <div class="star">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <p class="star-para">(48 lượt đánh giá)</p>
-                    </div>
-                    
-                    <div class="detail-size">
-                        <p class="size-para">Size</p>
-                        <div class="size">
-                            <div class="size-item">
-                                <button class="38">S</button>
-                            </div>
-                            <div class="size-item">
-                                <button class="39">M</button>
-                            </div>
-                            <div class="size-item">
-                                <button class="40">L</button>
-                            </div>
-                            <div class="size-item">
-                                <button class="41">XL</button>
-                            </div>
-                           
-                            <div class="size-item">
-                                <button class="42">XXL</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="detail-btn">
-                        <button class="detail-btn-add btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"><p>Thêm vào giỏ hàng</p></button>
-                    </div>
-                    <div class="sup">
-                        <p>Mọi thắc mắc về sản phẩm xin liên hệ <mark>0392795010</mark> để được giải đáp </p>
-                    </div>
-                  </div>
-                </div>
-                </div>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <div class="detail-info">
-        <h5>Mô tả</h5>
-        
-        <div class="mota">
-          <ul>
-              <li>Áo sơ mi dài tay, form Regular Fit dễ mặc, hợp form dáng.</li>
-              <li>Màu sắc và kiểu dáng trẻ trung, hiện đại, dễ phối đồ.</li>
-              <li>Chất liệu bạc hà kháng khuẩn tự nhiên, mát lạnh, mềm mượt, thân thiện với làn da.</li>
+          </div>
+          <div class="filter-price">
+            <h3 class="filter-name">Giá thành</h3>
+            <div class="filter-price-check">
+              <div class="check pb-2">
+                <label><input type="checkbox" class="price" value="1"> Dưới 1.000.000 VNĐ</label>
+              </div>
+              <div class="check pb-2">
+                <label><input type="checkbox" class="price" value="2"> Từ 1 đến 3.000.000 VNĐ</label>
+              </div>
               
-          </ul>
+             
+            </div>
+          </div>
+          <div class="filter-size">
+            <h3 class="filter-name">Size</h3>
+            <div class="filter-size-chekc">
+              <div class="row">
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="38"> 38</label>                
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="39"> 39</label>                
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="40"> 40</label>                
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="41"> 41</label>                
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="42"> 42</label>                
+                </div>
+                <div class="col-6 pb-1">
+                  <label><input type="checkbox" class="size" id="43"> 43</label>                
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+          
+          
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="container">
-  <div class="like">
-      <h5 class="like-tittle">Có thể mua cùng</h5>
+  <div class="filter">
+    <div class="btn-filter">
+      <button class="btn-f" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Bộ lọc sản phẩm</button>
     </div>
+    <div class="btn-sort">
+    
+        <select name="Sắp xếp" onchange="ascending()" id="sort"> 
+          <option class="sort" value="default">Sắp xếp</option>
+          <option class="tang"  value="tang">Giá tăng dần</option>
+          <option class="giam" value="giam">Giá giảm dần</option>
+        </select>
+        
+      
+    </div>
+  </div>
+</div>
+<section id="products">
+  <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-sm-6 col-6">
-          <div class="card-item">
-        
+      <div class="col-xl-3 col-12 filter-page">
+        <div class="filter-brand">
+          <h3 class="filter-name">Thương hiệu</h3>
+          <div class="filter-brand-check">
+            <div class="row">
+              <div class="col-6 pb-1">
+                <label><input   type="checkbox" class="brand" value="Nike"> ÁO POLO</label>
+              </div>
+              <div class="col-6 pb-1">
+                <label><input  type="checkbox" class="brand" value="Adidas"> ÁO SƠ MI</label>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="filter-price">
+          <h3 class="filter-name">Giá thành</h3>
+          <div class="filter-price-check">
+            <div class="check pb-2">
+              <label><input  type="checkbox" class="price" value="1"> Dưới 1.000.000 VNĐ</label>
+            </div>
+            <div class="check pb-2">
+              <label><input  type="checkbox" class="price" value="2"> Từ 1 đến 3.000.000 VNĐ</label>
+            </div>
+            
+           
+          </div>
+        </div>
+        <div class="filter-size">
+          <h3 class="filter-name">Size</h3>
+          <div class="filter-size-chekc">
+            <div class="row">
+              <div class="col-6 pb-1">
+                <label><input type="checkbox" class="size" id="38"> S</label>                
+              </div>
+              <div class="col-6 pb-1">
+                <label><input type="checkbox" class="size" id="39"> M</label>                
+              </div>
+              <div class="col-6 pb-1">
+                <label><input type="checkbox" class="size" id="40"> L</label>                
+              </div>
+              <div class="col-6 pb-1">
+                <label><input type="checkbox" class="size" id="41"> XL</label>                
+              </div>
+              <div class="col-6 pb-1">
+                <label><input type="checkbox" class="size" id="42"> XXL</label>                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-xl-9 col-12">
+        <div class="row products">
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
               <div class="card-image">
-               <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/c8882b6eda5c6e13d11dd4f92b73552c/a/p/apv23737.jpg" alt=""></a>
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/r/ar220134dt_1_.jpg" alt="ÁO SƠ MI"></a>
                 <div class="add-cart">
                   <div class="add">
-                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Thêm vào giỏ hàng</p></button>
+                    <button type="button" onclick="themvaogiohang(1)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
                   </div>
                 </div>
               </div>
               <div class="card-content">
-                <h4 class="name"><a href="./detail.html">ÁO POLO-PL9987SB</a></h4>
-                <h4 class="price">1.200.000 VNĐ</h4>
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-ART2212NT</a></h4>
+                <h4 class="price">600.000 VNĐ</h4>
               </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-6">
-          <div class="card-item">
+          </div>
         
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
               <div class="card-image">
-               <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/c8882b6eda5c6e13d11dd4f92b73552c/a/p/apv22328.jpg" alt=""></a>
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/s/as220796d.png" alt="ÁO SƠ MI"></a>
                 <div class="add-cart">
                   <div class="add">
-                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Thêm vào giỏ hàng</p></button>
+                    <button type="button" onclick="themvaogiohang(2)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
                   </div>
                 </div>
               </div>
               <div class="card-content">
-                <h4 class="name"><a href="./detail.html">ÁO POLO-PL5674323SV</a></h4>
-                <h4 class="price">1.350.000 VNĐ</h4>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-6">
-          <div class="card-item">
-        
-              <div class="card-image">
-               <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/c8882b6eda5c6e13d11dd4f92b73552c/a/p/apv21847-2.jpg" alt=""></a>
-                <div class="add-cart">
-                  <div class="add">
-                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Thêm vào giỏ hàng</p></button>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <h4 class="name"><a href="./detail.html">ÁO POLO-SM98372S</a>
-              </h4>
-                <h4 class="price">1.100.000 VNĐ</h4>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-6">
-          <div class="card-item">
-        
-              <div class="card-image">
-               <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/c8882b6eda5c6e13d11dd4f92b73552c/a/p/apv23067-1.jpg" alt=""></a>
-                <div class="add-cart">
-                  <div class="add">
-                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Thêm vào giỏ hàng</p></button>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <h4 class="name"><a href="./detail.html">ÁO POLO-SL8322NS</a>
-              </h4>
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-ART4343NT</a></h4>
                 <h4 class="price">800.000 VNĐ</h4>
               </div>
             </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/q/s/qs23471.jpg" alt="ÁO SƠ MI"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(3)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-ART8232NB</a></h4>
+                <h4 class="price">1.000.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/p/apv221135.png" alt="ÁO POLO"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(4)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO POLO-PL2312NT</a></h4>
+                <h4 class="price">400.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/_/3/_3m_apv221132.jpg" alt="ÁO POLO"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(5)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO POLO-PL4323SN</a></h4>
+                <h4 class="price">390.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/_/3/_3m_apv221131_2_.jpg" alt="ÁO POLO"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(6)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO POLO-PL202208NB</a></h4>
+                <h4 class="price">500.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/s/as220131nt_2__3.jpg" alt="ÁO SƠ MI"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(7)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-SM232324NB</a></h4>
+                <h4 class="price">500.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/z/3/z3594981116045_04577f6762d11138f87f574828aee9b0_1.jpg" alt="ÁO SƠ MI"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(8)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-SM232123SB</a></h4>
+                <h4 class="price">800.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/z/3/z3594981116045_04577f6762d11138f87f574828aee9b0_1.jpg" alt="ÁO SƠ MI"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(9)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-ART23232332SN</a></h4>
+                <h4 class="price">1.000.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/r/ar220012nt.jpg" alt="ÁO SƠ MI"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(10)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">Á SƠ MI-BN23232SM</a></h4>
+                <h4 class="price">900.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/a/p/apv220307_1_.jpg" alt="ÁO POLO"></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(11)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO POLO-PL093278NM</a></h4>
+                <h4 class="price">1.300.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-4 col-6">
+            <div class="card-item">
+              <div class="card-image">
+                <a href="./detail.html"><img src="https://owen.vn/media/catalog/product/cache/01755127bd64f5dde3182fd2f139143a/b/a/ba220022nt.jpg" alt="ÁO SƠ MI "></a>
+                <div class="add-cart">
+                  <div class="add">
+                    <button type="button" onclick="themvaogiohang(12)" class="btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal"> <p>Mua ngay</p></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4 class="name"><a href="./detail.html">ÁO SƠ MI-SM981232SN</a></h4>
+                <h4 class="price">1.200.000 VNĐ</h4>
+              </div>
+            </div>
+          </div>
         </div>
+        <nav aria-label="...">
+          <ul class="pagination">
+            
+            <li class="page-item active"><a class="page-link" href="./category.html">1</a></li>
+            <li class="page-item " aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
+      </div>
     </div>
-</div>
+  </div>
+</section>
+<div id="overlay"></div>
 <footer id="footer">
   <div class="container">
     <div class="row">
@@ -527,9 +747,9 @@
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="module" src="/assets/js/main.js"></script>
-  <script type="module" src="/assets/js/sidebar.js"></script>
-  <script type="module" src="/assets/js/detail.js"></script>
+  
+  <script  src="./assets/js/sidebar.js"></script>
+  <script  src="./assets/js/category.js"></script>
   
   
 </body>
